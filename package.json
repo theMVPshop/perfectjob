@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/theMVPshop/perfectjob#readme",
   "dependencies": {
+    "fs-extra": "^10.1.0",
     "node-modules": "^1.0.1",
     "rss-parser": "^3.12.0"
   }

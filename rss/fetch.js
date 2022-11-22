@@ -7,7 +7,7 @@ module.exports = async function getFeed() {
 
     let feed = await parser.parseURL('https://rss.indeed.com/rss?q=javascript&l=&from=searchOnHP&vjk=352c2bbcdeb4ef2f');
     
-    const fileName = `${feed.title.replace(/\s+/g, "_").replace(/[/\\?%*|"<>]/g, '').toLowerCase()}.json`
+    const fileName = 'jobData.json'
 
     await Promise.all(feed.items.map(async (currentItem) => {
         if (items.filter((item) => item === currentItem).length <= 1) {
@@ -17,9 +17,5 @@ module.exports = async function getFeed() {
 
     fs.writeFileSync(fileName, JSON.stringify(items));
 
-    // feed.items.forEach(item => {
-    //     console.log(item.title + ':' + item.link)
-    // });
-};
 
-getFeed();
+}();

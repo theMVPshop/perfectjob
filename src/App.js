@@ -6,10 +6,12 @@ import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-      <BrowserRouter>
+    <div style={{backgroundColor: "#F3F4F6"}}>
+      <BrowserRouter >
         <Navigation />
         <Router />
       </BrowserRouter>
+    </div>
     );
   }
 

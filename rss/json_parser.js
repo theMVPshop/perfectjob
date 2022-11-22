@@ -1,4 +1,10 @@
-let jobData = JSON.parse('./javascript_jobs__indeed.com.json');
-alert(jobData[0].title)
+const fs = require('fs-extra');
 
-console.log(jobData);
+fs.readFile('./jobData.json', (err, data) => {
+    if (err)
+      console.log(err);
+    else {
+      var json = JSON.parse(data);
+        console.log(json.title)
+    }
+})

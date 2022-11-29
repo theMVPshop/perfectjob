@@ -1,10 +1,5 @@
 const fs = require('fs-extra');
 
-/*This will search the jobData.json file. I think this actually needs to be on the react side
-in order to show the results on the webpage after the search has completed. So just convert this 
-over to something that will work in React and use it there.*/
-
-
 //reads jobData json file 
 fs.readFile('./jobData.json', (err, data) => {
     if (err)

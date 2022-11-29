@@ -1,0 +1,24 @@
+{
+  "name": "perfectjob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theMVPshop/perfectjob.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theMVPshop/perfectjob/issues"
+  },
+  "homepage": "https://github.com/theMVPshop/perfectjob#readme",
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "node-modules": "^1.0.1",
+    "rss-parser": "^3.12.0"
+  }
+}

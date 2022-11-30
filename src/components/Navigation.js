@@ -52,7 +52,11 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
+<<<<<<< HEAD
               color: 'inherit',
+=======
+              color: '#1E1E1E',
+>>>>>>> lucasbranch
               textDecoration: 'none',
             }}
           >
@@ -119,9 +123,15 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
+<<<<<<< HEAD
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
+=======
+                sx={{ my: 2, color: '#1E1E1E', display: 'block' }}
+              >
+                {page} 
+>>>>>>> lucasbranch
               </Button>
             ))}
           </Box>
@@ -160,4 +170,8 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
+<<<<<<< HEAD
 export default ResponsiveAppBar;
+=======
+export default ResponsiveAppBar;
+>>>>>>> lucasbranch

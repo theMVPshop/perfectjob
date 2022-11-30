@@ -1,4 +1,5 @@
 // geomap file first push
+import GEO_API_KEY from .env;
 let map;
 
 function initMap() {

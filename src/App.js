@@ -13,10 +13,14 @@ function App() {
     <div style={{backgroundColor: "#F3F4F6"}}>
       <BrowserRouter >
         <Navigation />
-        <BottomBar />
         <Router />
+
       </BrowserRouter>
+      <footer>
+      <BottomBar />
+      </footer>
     </div>
+    
     );
   }
 

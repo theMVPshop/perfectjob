@@ -3,14 +3,9 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
+
 
 function BasicGrid() {
   return (
@@ -21,22 +16,29 @@ function BasicGrid() {
       justifyContent="center"
       alignItems="center"
       spacing={2}>
+        
     
         <Grid item xs={2}>
-          <Item>xs=4</Item>
+          <Button variant="text">Apply For A New Job</Button>
         </Grid>
         <Grid item xs={2}>
-          <Item>xs=4</Item>
+          <Button variant="text">Register Your Account</Button>
         </Grid>
         <Grid item xs={2}>
-          <Item>xs=4</Item>
+          <Button variant="text">Update Your Resume</Button>
         </Grid>
         <Grid item xs={2}>
-          <Item>xs=4</Item>
+          <Button variant="text">Search All Jobs</Button>
         </Grid>
+        
       
       </Grid>
+
+
+
     </Box>
+
+    
   );
 }
 

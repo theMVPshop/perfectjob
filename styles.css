@@ -1,6 +1,5 @@
 .grid-container {
     display: grid;
-    background-color: rgb(247, 210, 244);
     padding: 10px;
   }
 
@@ -15,7 +14,7 @@
 }
 
 .header {
-    color: blueviolet;
+    color: rgb(113,63,220);
     font-size: 45px;
     padding-left: 20px;
   }
@@ -36,6 +35,13 @@
     background-color: red;
     padding: 5px;
   }
+
+  .button {
+    padding: 25px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: pink;
+}
 
 .footer {
     background-color: pink;

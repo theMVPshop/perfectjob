@@ -37,17 +37,20 @@
   }
 
 .button {
-  background-color: rgb(113,63,220);
-  border: none;
+  background-color: white;
+  border: 1px;
   border-radius: 15px;
   margin: 10px;
   padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+  color: rgb(113,63,220);
 }
 
   .button:hover {
     border-radius: 15px;
     border: none;
-    background-color: pink;
+    background-color: #F4C8DD;
+    color: white;
 }
 
 .footer {

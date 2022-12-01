@@ -6,7 +6,6 @@
 .topcontainer {
     display: flex;
     flex-wrap: wrap;
-    background-color: whitesmoke;
     grid-template-columns: auto auto;
     padding: 5px;
     align-items: center;
@@ -15,8 +14,9 @@
 
 .header {
     color: rgb(113,63,220);
-    font-size: 45px;
+    font-size: 65px;
     padding-left: 20px;
+    font-family: 'Raleway', sans-serif;
   }
 
 .navbar {
@@ -28,7 +28,6 @@
 .image {
     max-width: 100%;
     height: auto;
-    background-color: whitesmoke;
 }
 
 .results {

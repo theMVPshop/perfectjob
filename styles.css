@@ -1,0 +1,46 @@
+.grid-container {
+    display: grid;
+    background-color: rgb(247, 210, 244);
+    padding: 10px;
+  }
+
+.topcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    grid-template-columns: auto auto;
+    padding: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header {
+    color: blueviolet;
+    font-size: 45px;
+    padding-left: 20px;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.results {
+    background-color: red;
+    padding: 5px;
+  }
+
+.footer {
+    background-color: pink;
+    text-align: center;
+    padding: 2px;
+    
+}
+

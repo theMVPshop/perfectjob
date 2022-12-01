@@ -15,8 +15,8 @@ fs.readFile('./jobData.json', (err, data) => {
         let link = json[property].link;
         let contentSnippet = json[property].contentSnippet;
 
-        // console.log(title);
-        // console.log(link);
-        // console.log(contentSnippet);
+        console.log(title);
+        console.log(link);
+        console.log(contentSnippet);
     }
 })

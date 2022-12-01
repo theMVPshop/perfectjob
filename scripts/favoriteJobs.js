@@ -4,7 +4,7 @@ class Favorite {
         this. link = link;
         this.contentSnippet = contentSnippet;
     }
-}
+};
 
 function createNewFavorite () {
 
@@ -13,4 +13,5 @@ function createNewFavorite () {
     console.log(favoriteJob.link);
     console.log(favoriteJob.contentSnippet);
     
-}
+};
+createNewFavorite()

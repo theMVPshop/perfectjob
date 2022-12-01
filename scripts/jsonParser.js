@@ -1,6 +1,6 @@
 const fs = require('fs-extra');
 
-//reads jobData json file 
+//reads jobData.json file 
 fs.readFile('./jobData.json', (err, data) => {
     if (err)
       console.log(err);

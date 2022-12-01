@@ -386,3 +386,4 @@ $RECYCLE.BIN/
 
 node_modules/
 jobData.json
+**/.DS_Store

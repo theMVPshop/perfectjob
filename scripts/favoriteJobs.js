@@ -7,9 +7,11 @@ class Favorite {
 };
 
 function createNewFavorite () {
-    let text = document.getElementById("text").textContent;
+    let title = document.getElementsByClassName("title");
+    let link = document.getElementsByClassName("link");
+    let contentSnippet = document.getElementsByClassName("contentSnippet");
 
-    const favoriteJob = new Favorite(text, 'www.java.com', 'description');
+    const favoriteJob = new Favorite(title, link, contentSnippet);
     console.log(favoriteJob.title);
     console.log(favoriteJob.link);
     console.log(favoriteJob.contentSnippet);

@@ -1,0 +1,30 @@
+.title {
+    color: purple;
+   
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px;
+    width: 250px;
+    height: auto;
+    text-align: center;
+}
+
+img {
+    border-radius: 40px;
+    height: auto;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #D7D9D8;
+    height: auto;
+}

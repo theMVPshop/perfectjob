@@ -13,7 +13,23 @@ div.top{
   grid-column: 1/3;
   color: #070707;
   text-decoration: none;
-   
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul{
+    display: flex;
+    align-items: center;
+  }
+
+  ul li {
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+  }
 }
 
 div.middle{

@@ -1,7 +1,7 @@
 body{
   display: grid;
   height: 100vh;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   background-color: #F3F4F6;
   }
 
@@ -13,13 +13,30 @@ div.top{
 }
 
 div.middle{
-  grid-column: 2/3;
+  grid-column: 1/3;
+  grid-column-end: 2;
+  border-radius: 10px;
+  border: 0px;
+  border-color: #070707;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: auto;
+  position: ;
+
 
 }
 
 div.bottom{
     grid-column: 1/3;
     
+}
+
+div.basketball{
+  grid-column: 1/3;
+  background-image: url(basketball.png);
+  height: auto;
+  width: auto;
+  border-color: white;
 }
 
 li {

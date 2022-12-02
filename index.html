@@ -16,9 +16,28 @@
   <div class="middle">
     <h2>cruel</h2>
   </div>
- 
-  <div class="bottom">
-    <h3>world</h3>
+
+ <div class ="footer">
+  
+  <a class="one" href="">Apply</a>
+  <a class="two" href="">Register</a>
+  <a class="three" href="">Update</a>
+  <a class="four" href="">Search</a>
+
+  
+  <div style='display: block;'>
+    <label class="switch" style='top:15px;'>
+      <input class='active' type="checkbox" checked>
+      <!-- <input class='inactive' type="checkbox"  v-if="!edit.carrossel.ativo">
+      <input class='inactive' type="checkbox"  v-if="disableToggle" disabled> -->
+      <div class="slider round" @click="toggleSlider()">                                        
+        <span class="toggle-on" >  Yearly</span>
+        <span class="toggle-off">Monthly</span>                             
+      </div>
+    </label>                              
+ </div>
+</div>
+
   </div>
 </body>
 </html>

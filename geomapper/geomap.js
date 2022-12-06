@@ -15,3 +15,10 @@ var marker = L.marker([30.2019024431465, -97.87393387393803]).addTo(map);
 
 marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 // creates a popup above markers, maybe pull job name from rss feed to fill this pop up
+
+var popup = L.popup()
+    .setLatLng([30.2019024431465, -97.9])
+    .setContent("I am a standalone popup.")
+    .openOn(map);
+// standalone popup
+

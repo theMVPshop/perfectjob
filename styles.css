@@ -13,23 +13,9 @@ div.top{
   grid-column: 1/3;
   color: #070707;
   text-decoration: none;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  ul{
-    display: flex;
-    align-items: center;
-  }
-
-  ul li {
-    margin-right: 20px;
-
-    &:last-child {
-        margin-right: 0px;
-    }
-  }
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+   
 }
 
 div.middle{
@@ -49,18 +35,17 @@ div.bottom{
     
 }
 
-div.basketball{
-  grid-column: 1/3;
-  background-image: url(basketball.png);
-  height: auto;
-  width: auto;
-  border-color: white;
+li {
+  display: inline;
+  color: #070707;
+  text-decoration: none;
+   
 }
 
 
 div.footer{
   display: grid;
-  width: 100vh;
+  width: 100%;
   grid-template-columns: auto auto auto auto auto;
 }
 
@@ -77,5 +62,118 @@ article.three{
 }
 article.four{
   grid-column: 4/5;
-  
+
 }
+/* Toggle CSS */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;  
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #7a7878;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 1px solid #ccc;
+}
+
+.slider:before {
+  position: absolute;
+  content: attr(data-content) " ";  
+  height: 28px;
+  width: 45px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #7140dc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(95px);
+  -ms-transform: translateX(39px);
+  transform: translateX(39px);
+}
+
+/*------ ADDED CSS ---------*/
+.toggle-off
+{  /* display: none; */
+  top: 50%;
+  left: 15%;
+  margin-left: 10px;}
+
+  .toggle-on
+{
+  top: 50%;
+  left: 50%;
+  margin-left: 20px; }
+
+.toggle-on, .toggle-off
+{
+  color: black;
+  position: absolute;
+  transform: translate(-50%,-50%);  
+  font-size: 10px;
+  font-family: inherit;
+}
+
+.active:checked+ .slider .toggle-on
+{ /* display: block; */
+color: #7140dc !important; }
+
+
+.inactive + .slider .toggle-off {  
+  color: #7a7878 !important;
+}
+
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round 
+{  border-radius: 50px;
+ }
+
+.slider.round:before 
+{  border-radius: 15px;  }
+
+article.FJ{
+  grid-column: 2/3;
+
+}
+
+article.MJ{
+  grid-column: 2/3;
+
+}
+article.AU{
+  grid-column: 2/3;
+
+}
+article.L{
+  grid-column: 2/3;
+
+}
+article.A{
+  grid-column: 2/3;
+
+}
+

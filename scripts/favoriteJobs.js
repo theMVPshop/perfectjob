@@ -7,9 +7,8 @@ class Favorite {
 };
 
 function createNewFavorite () {
-    let text = document.getElementById("text").textContent;
 
-    const favoriteJob = new Favorite(text, 'www.java.com', 'description');
+    const favoriteJob = new Favorite('java job', 'www.golang.com', 'description');
     console.log(favoriteJob.title);
     console.log(favoriteJob.link);
     console.log(favoriteJob.contentSnippet);

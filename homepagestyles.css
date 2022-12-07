@@ -29,7 +29,6 @@ header {
 
 .main-nav {
   list-style-type: none;
-  display: none;
 }
 
 .nav-links {
@@ -142,7 +141,9 @@ input:checked + .slider:before {
   font-family: inherit;
 }
 
-.active:checked+ .slider .toggle-on {
+.active:checked+ .slider .toggle-on{
+
+
 color: #7140dc !important; }
 
 
@@ -219,7 +220,6 @@ color: #7140dc !important; }
   color: white;
 
 }
-
 /*------- Media Queries -------*/
 
 @media screen and (min-width: 768px) {
@@ -239,7 +239,7 @@ color: #7140dc !important; }
     display: flex;
     margin-right: 30px;
     flex-direction: row;
-    justify-content: flex;
+    justify-content: flex-end;
   }
 
   .main-nav li {

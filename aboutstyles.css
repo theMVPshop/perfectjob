@@ -7,18 +7,22 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 40px;
-    padding: 10px;
+    border-radius: 50px;
+    padding: 15px;
     width: 250px;
     height: auto;
     text-align: center;
 }
 
-img {
-    border-radius: 40px;
+.profileimage {
+    border-radius: 50px;
+    border: 5px;
     height: auto;
 }
 
+.contacticons {
+    margin: 5px;
+}
 
 .container {
     display: flex;

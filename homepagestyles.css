@@ -9,6 +9,7 @@ body{
   height: 100vh;
   grid-template-rows: auto auto auto auto;
   background-color: #F3F4F6;
+  font-family: 'Exo', sans-serif;
 }
 
 header {

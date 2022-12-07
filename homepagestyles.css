@@ -220,7 +220,7 @@ article.A{
     display: flex;
     margin-right: 30px;
     flex-direction: row;
-    justify-content: flex;
+    justify-content: flex-end;
   }
 
   .main-nav li {

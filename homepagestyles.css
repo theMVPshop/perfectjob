@@ -194,7 +194,7 @@ article.A{
   padding:20%;
   display: flex;
   justify-content: center;
-
+}
 /*------- Media Queries -------*/
 
 @media screen and (min-width: 768px) {
@@ -224,3 +224,4 @@ article.A{
   .nav-links {
     margin-left: 20px;
   }
+}

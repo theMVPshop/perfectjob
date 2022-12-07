@@ -3,7 +3,7 @@ body{
   height: 100vh;
   grid-template-rows: auto auto auto;
   background-color: #F3F4F6;
-  }
+}
 
 div.top{
   grid-column: 1/3;
@@ -56,7 +56,7 @@ article.four{
 .switch {
   position: relative;
   display: inline-block;
-  width: 90px;
+  width: 150px;
   height: 34px;
 }
 
@@ -72,14 +72,13 @@ article.four{
   background-color: #7a7878;
   -webkit-transition: .4s;
   transition: .4s;
-  border: 1px solid #ccc;
 }
 
 .slider:before {
   position: absolute;
   content: attr(data-content) " ";  
-  height: 28px;
-  width: 45px;
+  height: 31px;
+  width: 75px;
   left: 2px;
   bottom: 2px;
   background-color: white;
@@ -97,13 +96,12 @@ input:focus + .slider {
 
 input:checked + .slider:before {
   -webkit-transform: translateX(95px);
-  -ms-transform: translateX(39px);
-  transform: translateX(39px);
+  -ms-transform: translateX(70px);
+  transform: translateX(70px);
 }
 
-/*------ ADDED CSS ---------*/
 .toggle-off
-{  /* display: none; */
+{  
   top: 50%;
   left: 15%;
   margin-left: 10px;}
@@ -137,11 +135,11 @@ color: #7140dc !important; }
 
 /* Rounded sliders */
 .slider.round 
-{  border-radius: 50px;
+{  border-radius: 5px;
  }
 
 .slider.round:before 
-{  border-radius: 15px;  }
+{  border-radius: 5px;  }
 
 article.FJ{
   grid-column: 2/3;
@@ -164,4 +162,9 @@ article.A{
   grid-column: 2/3;
 
 }
+.bottom-grid{
+  padding:20%;
+  display: flex;
+  justify-content: center;
 
+}

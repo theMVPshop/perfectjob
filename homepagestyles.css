@@ -9,6 +9,7 @@ body{
   height: 100vh;
   grid-template-rows: auto auto auto auto;
   background-color: #F3F4F6;
+  font-family: 'Exo', sans-serif;
 }
 
 header {
@@ -17,11 +18,15 @@ header {
 
 .navbar{
  font-size: 18px;
- border: 1px solid rgba(0, 0, 0, 0.2);
+ border: 1px solid rgba(0, 0, 0, 0);
   color: #070707;
   text-decoration: none; 
   padding-bottom: 10px;
 
+}
+
+.main-nav {
+  list-style-type: none;
 }
 
 .nav-links {
@@ -214,7 +219,7 @@ article.A{
     display: flex;
     margin-right: 30px;
     flex-direction: row;
-    justify-content: flex;
+    justify-content: flex-end;
   }
 
   .main-nav li {

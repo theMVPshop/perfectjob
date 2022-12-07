@@ -142,7 +142,7 @@ input:checked + .slider:before {
   font-family: inherit;
 }
 
-.active:checked+ .slider .toggle-on
+.active:checked+ .slider .toggle-on {
 color: #7140dc !important; }
 
 
@@ -249,3 +249,4 @@ color: #7140dc !important; }
   .nav-links {
     margin-left: 20px;
   }
+}

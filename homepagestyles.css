@@ -17,11 +17,16 @@ header {
 
 .navbar{
  font-size: 18px;
- border: 1px solid rgba(0, 0, 0, 0.2);
+ border: 1px solid rgba(0, 0, 0, 0);
   color: #070707;
   text-decoration: none; 
   padding-bottom: 10px;
 
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
 }
 
 .nav-links {
@@ -194,6 +199,7 @@ article.A{
   padding:20%;
   display: flex;
   justify-content: center;
+}
 
 /*------- Media Queries -------*/
 

@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="homepagestyles.css">
+  
 
 </head>
 <body>
@@ -42,22 +43,22 @@
 
  <div class ="footer">
   
-  <a class="one" href="">Apply</a>
-  <a class="two" href="">Register</a>
-  <a class="three" href="">Update</a>
-  <a class="four" href="">Search</a>
-  <div style='display: block;'>
+  <li class="bottom-grid"><a class="one" href="">Apply</a></li>
+<li class="bottom-grid"><a class="two" href="">Register</a></li>
+ <li class="bottom-grid"> <a class="three" href="">Update</a></li>
+  <li class="bottom-grid"><a class="four" href="">Search</a></li>
+ <li class="bottom-grid"> <div style='display: block;'>
+    <h4>Our Pricing</h4>
     <label class="switch" style='top:15px;'>
       <input class='active' type="checkbox" checked>
-      <!-- <input class='inactive' type="checkbox"  v-if="!edit.carrossel.ativo">
-      <input class='inactive' type="checkbox"  v-if="disableToggle" disabled> -->
+
       <div class="slider round" @click="toggleSlider()">                                        
         <span class="toggle-on" >Yearly</span>
         <span class="toggle-off">Monthly</span>                             
       </div>
     </label>                              
  </div>
-
+</li>
       </div>                              
 
 </body>

@@ -141,7 +141,9 @@ input:checked + .slider:before {
   font-family: inherit;
 }
 
-.active:checked+ .slider .toggle-on
+.active:checked+ .slider .toggle-on{
+
+
 color: #7140dc !important; }
 
 

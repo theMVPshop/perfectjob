@@ -6,8 +6,8 @@
 
 .topcontainer {
     display: flex;
-    grid-template-columns: auto auto;
-    padding: 5px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
     align-items: center;
     background-color: #F3F4F6;
 }
@@ -35,7 +35,6 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
     margin-right: 25%;
     margin-left: 25%;
-    
 }
 
 .image {

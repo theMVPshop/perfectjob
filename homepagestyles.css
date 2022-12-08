@@ -14,6 +14,11 @@ body{
   background-color: #f3f5f6;
 }
 
+img { 
+  max-width: 100%; 
+  height: auto; 
+}
+
 header {
   padding: 1em;
 }
@@ -26,12 +31,12 @@ header {
 }
 
 .navbar{
- font-size: 18px;
- border: 1px solid rgba(0, 0, 0, 0);
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0);
   color: #070707;
   text-decoration: none; 
   padding-bottom: 10px;
-  padding-top: 20px;
+  padding-top: 20px;  
   padding-left: 20px;
   padding-right: 40px;
 
@@ -63,7 +68,7 @@ header {
 }
 
 
-div.middle{
+div.middle {
   border-radius: 50px;
   border: 0
   border-color: #070707;
@@ -280,7 +285,7 @@ color: #7140dc !important; }
 @media screen and (min-width: 768px) {
   .navbar {
     display: flex;
-    justify-content: safe;
+    justify-content: space-between;
     padding-bottom: 0;
     height: 70px;
    
@@ -317,3 +322,4 @@ color: #7140dc !important; }
     margin-left: 20px;
   }
 }
+

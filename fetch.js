@@ -1,8 +1,9 @@
 const Parser = require('rss-parser');
-const fs = require('fs-extra');
+const fs = require('fs');
+// const fs = require('fs-extra');
 
 //function creates the jobData.json file
-module.exports = async function getFeed() {
+async function getFeed() {
     let items = [];
     let parser = new Parser();
 
@@ -23,7 +24,7 @@ module.exports = async function getFeed() {
     }));
 
     fs.writeFileSync(fileName, JSON.stringify(items));
-}();
+};
 
 function readData() {
     fs.readFile('./jobData.json', (err, data) => {
@@ -54,4 +55,6 @@ function readData() {
 }
 
 
- 
+function clicked() {
+    console.log("hello");
+};

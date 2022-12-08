@@ -299,6 +299,7 @@ color: #7140dc !important; }
     display: flex;
     margin-right: 30px;
     flex-direction: row;
+    margin-right: 30px;
   }
   
   .main-nav li {

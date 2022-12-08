@@ -70,7 +70,7 @@ header {
 
 div.middle {
   border-radius: 50px;
-  border: 0
+  border: 0;
   border-color: #070707;
   background-color: #FFFFFF;
   padding: 20px;
@@ -299,6 +299,7 @@ color: #7140dc !important; }
     display: flex;
     margin-right: 30px;
     flex-direction: row;
+    margin-right: 30px;
   }
   
   .main-nav li {
@@ -308,7 +309,6 @@ color: #7140dc !important; }
   .right-nav {
     display: flex;
     flex-direction: row;
-    margin-right:
     margin-left: auto;
   }
   
@@ -322,4 +322,3 @@ color: #7140dc !important; }
     margin-left: 20px;
   }
 }
-

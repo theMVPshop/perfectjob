@@ -13,21 +13,42 @@ body{
   font-weight:900;
 }
 
+img { 
+  max-width: 100%; 
+  height: auto; 
+}
+
 header {
   padding: 1em;
 }
 
+.finder{
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
 .navbar{
- font-size: 18px;
- border: 1px solid rgba(0, 0, 0, 0);
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0);
   color: #070707;
   text-decoration: none; 
   padding-bottom: 10px;
+  padding-top: 20px;  
+  padding-left: 20px;
+  padding-right: 40px;
 
 }
 
 .main-nav {
   list-style-type: none;
+}
+
+.right-nav {
+  list-style-type: none;
+  display: none;
+  margin-left: auto;
 }
 
 .nav-links {
@@ -40,16 +61,27 @@ header {
   margin: 15px auto;
 }
 
-div.middle{
-  grid-column: 1/3;
-  grid-column-end: 2;
-  border-radius: 10px;
-  border: 0px;
+.right-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+
+div.middle {
+  border-radius: 50px;
+  border: 0;
   border-color: #070707;
   background-color: #FFFFFF;
   padding: 20px;
   margin: auto;
-
+  word-spacing: 40px;
+  box-shadow:   
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 div.bottom{
@@ -64,6 +96,34 @@ li {
    
 }
 
+input {
+  border:0;
+  outline:0;
+  font-size: 18px;
+}
+
+input:focus {
+  outline:none!important;
+}
+
+select {
+  font-size: 18px;
+  border:0;
+  outline:0;
+  background-color: #FFFFFF;
+}
+
+
+button {
+  border-radius: 40px;
+  border: 0px;
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #713FDC;
+  color: #F3F4F6;
+  font-size: 18px;
+}
 
 div.footer{
   display: grid;
@@ -238,12 +298,24 @@ color: #7140dc !important; }
     display: flex;
     margin-right: 30px;
     flex-direction: row;
-    justify-content: flex-end;
+    margin-right: 30px;
   }
-
+  
   .main-nav li {
     margin: 0;
   }
+
+  .right-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+  
+  .right-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+
 
   .nav-links {
     margin-left: 20px;

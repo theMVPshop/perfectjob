@@ -10,6 +10,8 @@ body{
   grid-template-rows: auto auto auto auto;
   background-color: #F3F4F6;
   font-family: 'Exo', sans-serif;
+  font-weight:900;
+  background-color: #f3f5f6;
 }
 
 header {
@@ -37,7 +39,6 @@ header {
 
 .main-nav {
   list-style-type: none;
-  display: none;
 }
 
 .right-nav {
@@ -126,22 +127,7 @@ div.footer{
   grid-template-columns: auto auto auto auto auto;
 }
 
-article.one{
-  grid-column: 1/2;
-}
-article.two{
-  grid-column: 2/3;
-  
-}
-article.three{
-  grid-column: 3/4;
-  
-}
-article.four{
-  grid-column: 4/5;
 
-}
-/* Toggle CSS */
 .switch {
   position: relative;
   display: inline-block;
@@ -210,8 +196,9 @@ input:checked + .slider:before {
   font-family: inherit;
 }
 
-.active:checked+ .slider .toggle-on
-{ /* display: block; */
+.active:checked+ .slider .toggle-on{
+
+
 color: #7140dc !important; }
 
 
@@ -220,9 +207,6 @@ color: #7140dc !important; }
 }
 
 
-/*--------- END --------*/
-
-/* Rounded sliders */
 .slider.round 
 {  border-radius: 5px;
  }
@@ -230,33 +214,67 @@ color: #7140dc !important; }
 .slider.round:before 
 {  border-radius: 5px;  }
 
-article.FJ{
-  grid-column: 2/3;
-
-}
-
-article.MJ{
-  grid-column: 2/3;
-
-}
-article.AU{
-  grid-column: 2/3;
-
-}
-article.L{
-  grid-column: 2/3;
-
-}
-article.A{
-  grid-column: 2/3;
-
-}
 .bottom-grid{
-  padding:20%;
+  padding:13%;
   display: flex;
   justify-content: center;
+
 }
 
+
+.bglink{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+ 
+  border-radius: 10px;
+  margin: 10%;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  
+}
+
+.bglink:hover{
+  background-color: #713FDC;
+
+}
+
+.arrow{
+  height: 30px;
+  float:right;
+  grid-column: 2/3;
+  grid-row:1/2;
+}
+
+.one{
+  grid-row:2/3;
+}
+.two{
+  grid-row:2/3;
+}
+.three{
+  grid-row:2/3;
+}
+.four{
+  grid-row:2/3;
+}
+
+.one:hover{
+ color: white;
+}
+.two:hover{
+  color: white;
+
+}
+.three:hover{
+  color: white;
+
+}
+.four:hover{
+  color: white;
+
+}
 /*------- Media Queries -------*/
 
 @media screen and (min-width: 768px) {
@@ -298,3 +316,4 @@ article.A{
   .nav-links {
     margin-left: 20px;
   }
+}

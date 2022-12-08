@@ -63,5 +63,9 @@
   "bugs": {
     "url": "https://github.com/theMVPshop/perfectjob/issues"
   },
-  "homepage": "https://github.com/theMVPshop/perfectjob#readme"
+  "homepage": "https://github.com/theMVPshop/perfectjob#readme",
+  "dependencies": {
+    "leaflet": "^1.9.3",
+    "rss-parser": "^3.12.0"
+  }
 }

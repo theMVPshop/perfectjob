@@ -9,20 +9,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="abouttitle">Meet The Team</h1>
-
-    <div class="navbar">
+    <nav class="navbar">
+        <a href="index.html" class="nav-links"><b>Finder</b></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+              <a href="favorites.html" class="nav-links">Find Jobs</a>
+            </li>
+            <li>
+              <a href="favorites.html" class="nav-links">My Jobs</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-links">About us</a>
+            </li>
+         </ul>
         
-        <button onclick="document.location='index.html'" class="button">Home</button>
-        <button onclick="document.location='search.html'" class="button">Search</button>
-        <button onclick="document.location='about.html'" class="button">About</button>
-        <button onclick="document.location='favorites.html'" class="button">Favorites</button>
-      </div>
+      <ul class="right-nav">
+          <a class="nav-links" href="#login">Log in</a>
+          <a class="nav-links" href="#createaccount">Create Account</a>
+        </ul>
+      </nav>
+
+    <h1 class="abouttitle">#SQUADGOALS</h1>
+
      <br> 
 
     <div class="container">
-
-        <h2 class="profile"> <img class="profileimage" src="/images/ramon.jpg" alt="Ramon Profile Picture">
+        
+        <div class="profile"> <img class="profileimage" src="/images/ramon.jpg" alt="Ramon Profile Picture">
             <br>
             Ramon Cruz
             <br>
@@ -34,10 +47,13 @@
                 <img src="/images/linkedin.png" alt="linkedin icon" style="width:45px; padding: 5px;">
             </a>
          </div>
-        </h2>
+        </div>
 
-        <h2 class="profile">
-            <img class="profileimage" src="/images/SandraProfilePic.jpg" alt="Sandra Profile Picture">
+        <div class="profile">
+            <img class="profileimage" src="/images/sandra80s.webp"
+            onmouseover="this.src='/images/SandraProfilePic.jpg'" onmouseout="this.src='/images/sandra80s.webp'"
+            alt="Sandra Profile Picture">
+           
             <br>
             Sandra Escalante
             <br>
@@ -49,9 +65,11 @@
                 <img src="/images/linkedin.png" alt="linkedin icon" style="width:45px; padding: 5px;">
             </a>
          </div>
-        </h2>
+        </div>
 
-        <h2 class="profile"> <img class="profileimage" src="/images/chrisg.jpg" alt="Ramon Profile Picture">
+        <div class="profile"> <img class="profileimage" src="/images/chrisg.jpg"  alt="Chris Profile Picture"
+            onmouseover="this.src='images/CG HS.png'" onmouseout="this.src='/images/chrisg.jpg'"
+            >
             <br>
             Chris Greene
             <br>
@@ -63,9 +81,9 @@
                 <img src="/images/linkedin.png" alt="linkedin icon" style="width:45px; padding: 5px;">
             </a>
          </div>
-        </h2>
+        </div>
 
-        <h2 class="profile"> <img class="profileimage" src="/images/lucas.jpg" alt="Ramon Profile Picture">
+        <div class="profile"> <img class="profileimage" src="/images/lucas.jpg" alt="Ramon Profile Picture">
             <br>
             Lucas McGill
             <br>
@@ -77,9 +95,9 @@
                 <img src="/images/linkedin.png" alt="linkedin icon" style="width:45px; padding: 5px;">
             </a>
          </div>
-        </h2>
+        </div>
 
-        <h2 class="profile"> <img class="profileimage" src="/images/Seth.jpg" alt="Ramon Profile Picture">
+        <div class="profile"> <img class="profileimage" src="/images/Seth.jpg" alt="Ramon Profile Picture">
             <br>
             Seth Taplin
             <br>
@@ -91,7 +109,7 @@
                 <img src="/images/linkedin.png" alt="linkedin icon" style="width:45px; padding: 5px;">
             </a>
          </div>
-        </h2>
+        </div>
         
     </div>
 

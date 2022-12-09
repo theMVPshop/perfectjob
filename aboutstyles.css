@@ -1,11 +1,24 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
 body{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
   background-color: #F3F4F6;
   font-family: 'Exo', sans-serif;
   font-weight:900;
+  width: 100%;
 }
 
 .abouttitle {
     color: purple;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding-top:10%;
+    font-size: 300%;
    
 }
 
@@ -14,10 +27,11 @@ body{
     flex-direction: column;
     background-color: white;
     border-radius: 50px;
-    padding: 15px;
+    padding: 5%;
     width: 30vh;
     height: auto;
     text-align: center;
+    margin: 2vh;
 }
 
 .profileimage {
@@ -26,36 +40,22 @@ body{
     height: auto;
 }
 
+
+
+
 .contacticons {
     margin: 5px;
 }
-/* 
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #D7D9D8;
-    height: auto;
-} */
+
 
 .container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    width: 100%;
+    grid-column:1/4;
+    width: 100vh;
+    padding: 3%;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    border-radius: 30px;
-    background-color: white;
-    width: 500px  ;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
-    margin-right: 25%;
-    margin-left: 25%;
-}
 
 .button {
     background-color: white;
@@ -73,3 +73,102 @@ body{
       color: white;
   }
   
+  .navbar{
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #070707;
+    text-decoration: none; 
+    padding-bottom: 10px;
+    padding-top: 20px;  
+    padding-left: 20px;
+    padding-right: 40px;
+    grid-column: 1/4;
+  
+  }
+  
+  .main-nav {
+    list-style-type: none;
+  }
+  
+  .right-nav {
+    list-style-type: none;
+    display: none;
+    margin-left: auto;
+  }
+  
+  .nav-links {
+      text-decoration: none;
+      color: black;
+  }
+  
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  
+  .right-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+
+header {
+    padding: 1em;
+  }
+  
+  .finder{
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+     
+    }
+  
+    #chkToggle:checked + ul.main-nav {
+      display: flex;
+    }
+  
+    .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      margin-right: 30px;
+    }
+    
+    .main-nav li {
+      margin: 0;
+    }
+  
+    .right-nav {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+    }
+    
+    .right-nav li {
+      text-align: center;
+      margin: 15px auto;
+    }
+  
+  
+    .nav-links {
+      margin-left: 20px;
+      
+    }
+
+  }
+
+  @media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+  }

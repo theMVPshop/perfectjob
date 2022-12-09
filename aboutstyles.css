@@ -1,3 +1,9 @@
+body{
+  background-color: #F3F4F6;
+  font-family: 'Exo', sans-serif;
+  font-weight:900;
+}
+
 .abouttitle {
     color: purple;
    
@@ -9,7 +15,7 @@
     background-color: white;
     border-radius: 50px;
     padding: 15px;
-    width: 250px;
+    width: 30vh;
     height: auto;
     text-align: center;
 }
@@ -23,7 +29,7 @@
 .contacticons {
     margin: 5px;
 }
-
+/* 
 .container {
     display: flex;
     flex-direction: row;
@@ -31,6 +37,12 @@
     justify-content: space-around;
     background-color: #D7D9D8;
     height: auto;
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 100%;
 }
 
 .navbar {

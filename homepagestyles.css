@@ -14,6 +14,12 @@ body{
   background-color: #f3f5f6;
 }
 
+.fontAwesome {
+  font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+
+
+
 img { 
   max-width: 100%; 
   height: auto; 
@@ -53,6 +59,8 @@ header {
 }
 
 .nav-links {
+  --fa-border-color: red;
+  --fa-primary-color: #FF4B88;
     text-decoration: none;
     color: black;
 }
@@ -90,6 +98,11 @@ div.bottom{
     
 }
 
+.placeholderIcon {
+  opacity:0.3;
+}
+
+
 li {
   display: inline;
   color: #070707;
@@ -101,6 +114,7 @@ input {
   border:0;
   outline:0;
   font-size: 18px;
+  justify-content: flex-start;
 }
 
 input:focus {

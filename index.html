@@ -7,10 +7,12 @@
   <title>Document</title>
   <link rel="stylesheet" href="homepagestyles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/71a3e38957.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
   <nav class="navbar">
+    <a href="index.html" class="nav-links"><i class="fa-regular fa-star"></i></a>
     <a href="index.html" class="nav-links"><b>Finder</b></a>
     <ul class="main-nav" id="js-menu">
         <li>
@@ -24,7 +26,9 @@
         </li>
      </ul>
     
-  <ul class="right-nav">
+    <ul class="right-nav">
+      
+      <a class="nav-links" href="#mail"><i class="fa-regular fa-envelope fa-lg"></i></a>
       <a class="nav-links" href="#login">Log in</a>
       <a class="nav-links" href="#createaccount">Create Account</a>
     </ul>
@@ -34,9 +38,13 @@
 
  
   <div class="middle">
-    <input type="search" id="site-search" name="q" placeholder="Job Title or Keyword">
-    <input type="search" id="site-search" name="q" placeholder="Location">
-
+    <a><i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      <input type="search" class="fontAwesome" id="site-search" name="q" placeholder="Job Title or Keyword">
+    </a>
+    <a><i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      <input type="search" id="site-search" name="q" placeholder="Location">
+    </a>
+    
     <select name="jobtype" id="site-search">
         <option>Job type</option>
         <option value="fulltime">Full Time</option>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="homepagestyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-links"><b>Finder</b></a>
+    <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="favorites.html" class="nav-links">Find Jobs</a>
+        </li>
+        <li>
+          <a href="favorites.html" class="nav-links">My Jobs</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-links">About us</a>
+        </li>
+     </ul>
+    
+  <ul class="right-nav">
+      <a class="nav-links" href="#login">Log in</a>
+      <a class="nav-links" href="#createaccount">Create Account</a>
+    </ul>
+  </nav>
+
+  <img src="./Screen Shot 2022-12-01 at 7.02.59 PM.png" alt="Girl in a jacket" width="auto" height="60%">
+
+ 
+  <div class="middle">
+    <input type="search" id="site-search" name="q" placeholder="Job Title or Keyword">
+    <input type="search" id="site-search" name="q" placeholder="Location">
+
+    <select name="jobtype" id="site-search">
+        <option>Job type</option>
+        <option value="fulltime">Full Time</option>
+        <option value="parttime">Part Time</option>
+    </select>
+
+    <button>Find Job</button>
+  </div>
+
+ <div class ="footer">
+  
+  <li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="one" href="">Apply For New Job</a></li>
+<li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="two" href="">Register Your Account</a></li>
+ <li class="bottom-grid bglink"> <img class = "arrow" src="./arrow.png" alt="arrow"> <a class="three" href="">Update Resumes</a></li>
+  <li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="four" href="">Search New Job</a></li>
+ <li class="bottom-grid"> <div style='display: block;'>
+    <h4>Our Pricing</h4>
+    <label class="switch" style='top:15px;'>
+      <input class='active' type="checkbox" checked>
+
+      <div class="slider round" @click="toggleSlider()">                                        
+        <span class="toggle-on" >Yearly</span>
+        <span class="toggle-off">Monthly</span>                             
+      </div>
+    </label>                              
+ </div>
+</li>
+      </div>                              
+
+</body>
+</html>

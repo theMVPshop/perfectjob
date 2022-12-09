@@ -22,3 +22,6 @@ var popup = L.popup()
     .openOn(map);
 // standalone popup
 
+var locateMe = map.locate(setView = true);
+var stoplocate = map.stopLocate();
+// finding my location might need an api i cant use, pointToSegmentDistance func might be the only way to show distance from home to job.

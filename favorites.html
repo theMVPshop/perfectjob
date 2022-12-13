@@ -5,37 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Favorites</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="favoritestyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="grid-container">
 
         <div class="topcontainer">
-            <div class="header">Perfect Job</div>
-            <div class="header2">Results</div>
-         <img src="/images/basketball.png" alt="basketball logo" height="auto" width="300px">
+            Perfect Job
+            <div class="header2">Results</div> 
+         <img class="logo" src="/images/basketball.png" alt="basketball logo">
           </div>
-
+          <br>
      
-
       <div class="navbar">
-        <button class="button">Home</button>
-        <button class="button">Search</button>
-        <button class="button">About</button>
+        
+        <button onclick="document.location='index.html'" class="button">Home</button>
+        <button onclick="document.location='search.html'" class="button">Search</button>
+        <button onclick="document.location='about.html'" class="button">About</button>
       </div>
       <br>
 
       <div>
         <div class="results">List of Results</div>
-
-        <div class="footer">  
-            Footer
-        </div>
-        </div>
+      </div>
 
     </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-
+  <script src="favorites.js"></script>
 </body>
 </html>

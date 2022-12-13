@@ -120,6 +120,7 @@ header {
     font-size: 22px;
     margin-top: 10px;
     margin-left: 20px;
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: 768px) {
@@ -160,7 +161,6 @@ header {
   
     .nav-links {
       margin-left: 20px;
-      
     }
 
   }
@@ -170,5 +170,17 @@ header {
         display: flex;
         flex-wrap: wrap;
     }
+    .navbar {
+        display: flex;
+        justify-content: left;
+        padding-bottom: 10vh;
+        height: 70px;
+       
+      }
+      .abouttitle{
+        margin-top: 20%;
+
+      }
+     
   
   }

@@ -336,3 +336,18 @@ color: #7140dc !important; }
     margin-left: 20px;
   }
 }
+
+@media screen and (max-width: 1000px){
+  div.footer{
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+  }
+
+  .bottom-grid{
+   height: fit-content;
+   width: fit-content;
+  }
+    }
+   
+

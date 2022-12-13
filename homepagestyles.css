@@ -258,6 +258,7 @@ color: #7140dc !important; }
 
 }
 
+
 .arrow{
   height: 30px;
   float:right;
@@ -278,18 +279,18 @@ color: #7140dc !important; }
   grid-row:2/3;
 }
 
-.one:hover{
+.bglink:hover .one{
  color: white;
 }
-.two:hover{
+.bglink:hover .two{
   color: white;
 
 }
-.three:hover{
+.bglink:hover .three{
   color: white;
 
 }
-.four:hover{
+.bglink:hover .four{
   color: white;
 
 }

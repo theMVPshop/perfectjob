@@ -12,14 +12,14 @@ async function getFeed() {
 
         feed.items.forEach(function(entry) {
         
-            let h1 = document.createElement('h1');
-            let h2 = document.createElement('h2');
+            let h2 = document.createElement('h1');
+            let h3 = document.createElement('h2');
             let p = document.createElement('p');
 
-            let div = document.getElementById('jobData');
+            let li = document.getElementById('jobData');
             let text = document.createTextNode(entry.title + '\n' + entry.link + '\n' + entry.contentSnippet);
-            div.appendChild(text);
-            document.body.appendChild(div)
+            li.appendChild(text);
+            document.body.appendChild(li)
             console.log(entry.title + ':' + entry.link);
         })
     })

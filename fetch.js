@@ -4,7 +4,8 @@ async function getFeed() {
             item: ['georss:point', 'geo']
         }
     });
-
+    // custom field pulls georss data
+    
     //actual values need to be equal to front end user inputs
     let jobTitle = 'developer';
     let location = 'austin, tx';

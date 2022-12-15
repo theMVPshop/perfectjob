@@ -228,6 +228,19 @@ header {
       margin-top: 20%;
 
     }
+
+    @media screen and (max-width: 1000px){
+      footer{
+        display: flex;
+        flex-direction: row;  
+        flex-wrap: wrap;
+      }
+    
+      .bottom-grid{
+       height: fit-content;
+       width: fit-content;
+      }
+        }
    
 
 }

@@ -12,7 +12,7 @@ async function getFeed() {
 
     parser.parseURL(`https://www.indeed.com/rss`, function(err, feed) {
         if (err) throw err;
-        console.log(feed, feed.title);
+        console.log(feed.title);
 
         feed.items.forEach(function(entry) {
         

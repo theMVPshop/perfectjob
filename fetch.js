@@ -1,25 +1,18 @@
 async function getFeed() {
-    let parser = new RSSParser();
+    let parser = new RSSParser({
+        customFields: {
+            item: ['georss:point', 'geo']
+        }
+    });
 
     //actual values need to be equal to front end user inputs
     let jobTitle = 'developer';
     let location = 'austin, tx';
     let positionType = 'fulltime';
 
-
-//     const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-
-// parser.parseURL(CORS_PROXY + 'https://www.reddit.com/.rss', function(err, feed) {
-//   if (err) throw err;
-//   console.log(feed.title);
-//   feed.items.forEach(function(entry) {
-//     console.log(entry.title + ':' + entry.link);
-//   })
-// })
-
-    parser.parseURL(`https://www.reddit.com/.rss`, function(err, feed) {
+    parser.parseURL(`https://www.indeed.com/rss`, function(err, feed) {
         if (err) throw err;
-        console.log(feed.title);
+        console.log(feed, feed.title);
 
         feed.items.forEach(function(entry) {
         

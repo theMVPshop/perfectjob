@@ -6,7 +6,18 @@ async function getFeed() {
     let location = 'austin, tx';
     let positionType = 'fulltime';
 
-    parser.parseURL(`https://rss.indeed.com/rss/jobs?q=${jobTitle}&l=${location}&sc=0kf%3Ajt%28${positionType}%29%3B&radius=0&vjk=2dd88a57cffe14c8`, function(err, feed) {
+
+//     const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
+
+// parser.parseURL(CORS_PROXY + 'https://www.reddit.com/.rss', function(err, feed) {
+//   if (err) throw err;
+//   console.log(feed.title);
+//   feed.items.forEach(function(entry) {
+//     console.log(entry.title + ':' + entry.link);
+//   })
+// })
+
+    parser.parseURL(`https://www.reddit.com/.rss`, function(err, feed) {
         if (err) throw err;
         console.log(feed.title);
 

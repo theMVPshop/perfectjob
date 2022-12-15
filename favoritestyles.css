@@ -1,3 +1,42 @@
+body{
+  background-color: #F3F4F6;
+  font-family: 'Exo', sans-serif;
+  font-weight:900;
+}
+
+.abouttitle {
+  color: purple;
+ 
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 50px;
+  padding: 15px;
+  width: 30vh;
+  height: auto;
+  text-align: center;
+}
+
+.profileimage {
+  border-radius: 50px;
+  border: 5px;
+  height: auto;
+}
+
+.contacticons {
+  margin: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  width: 100%;
+}
+
+
 .grid-container {
     display: grid;
     padding: 10px;
@@ -15,7 +54,7 @@
     font-size: 70px;
   }
 
-  .header2 {
+.header2 {
     color: #FF4B88;
   }
 

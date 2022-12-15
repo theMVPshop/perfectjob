@@ -233,7 +233,7 @@ color: #7140dc !important; }
 {  border-radius: 5px;  }
 
 .bottom-grid{
-  padding:13%;
+  padding:2vh;
   display: flex;
   justify-content: center;
 

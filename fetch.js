@@ -1,12 +1,17 @@
 async function getFeed() {
-    let parser = new RSSParser();
-
+    let parser = new RSSParser({
+        customFields: {
+            item: ['georss:point', 'geo']
+        }
+    });
+    // custom field pulls georss data
+    
     //actual values need to be equal to front end user inputs
     let jobTitle = 'developer';
     let location = 'austin, tx';
     let positionType = 'fulltime';
 
-    parser.parseURL(`https://rss.indeed.com/rss/jobs?q=${jobTitle}&l=${location}&sc=0kf%3Ajt%28${positionType}%29%3B&radius=0&vjk=2dd88a57cffe14c8`, function(err, feed) {
+    parser.parseURL(`https://www.indeed.com/rss`, function(err, feed) {
         if (err) throw err;
         console.log(feed.title);
 

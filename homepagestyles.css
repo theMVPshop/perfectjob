@@ -75,7 +75,7 @@ header {
 }
 
 
-div.middle {
+section.middle {
   border-radius: 50px;
   border: 0;
   border-color: #070707;
@@ -139,7 +139,7 @@ button {
   font-size: 18px;
 }
 
-div.footer{
+footer{
   display: grid;
   width: 100%;
   grid-template-columns: auto auto auto auto auto;
@@ -233,7 +233,7 @@ color: #7140dc !important; }
 {  border-radius: 5px;  }
 
 .bottom-grid{
-  padding:13%;
+  padding:2vh;
   display: flex;
   justify-content: center;
 
@@ -335,10 +335,10 @@ color: #7140dc !important; }
   .nav-links {
     margin-left: 20px;
   }
-}
+
 
 @media screen and (max-width: 1000px){
-  div.footer{
+  footer{
     display: flex;
     flex-direction: row;  
     flex-wrap: wrap;
@@ -350,4 +350,4 @@ color: #7140dc !important; }
   }
     }
    
-
+  }

@@ -12,12 +12,24 @@ body{
   font-weight:900;
 }
 
+/* Home Page */
+
+main {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
 .fontAwesome {
   font-family: 'Helvetica', FontAwesome, sans-serif;
 }
 
 .abouttitle {
   color: purple;
+}
+
+.headerimg { 
+  max-width: 100%; 
+  height: auto; 
 }
 
 img { 
@@ -34,6 +46,21 @@ header {
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
+}
+
+.navbar{
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #070707;
+  text-decoration: none; 
+  padding-bottom: 10px;
+  padding-top: 20px;  
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.navbarAbout {
+  grid-column: 1/4;
 }
 
 .main-nav {
@@ -284,6 +311,7 @@ color: #7140dc !important; }
 
 }
 
+/* About Page CSS */
 
 .profile {
   display: flex;
@@ -312,6 +340,7 @@ color: #7140dc !important; }
   width: 100%;
 }
 
+/* Favorite Jobs */
 
 .grid-container {
     display: grid;
@@ -332,19 +361,6 @@ color: #7140dc !important; }
 
 .header2 {
     color: #FF4B88;
-  }
-
-  .navbar{
-    font-size: 18px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    color: #070707;
-    text-decoration: none; 
-    padding-bottom: 10px;
-    padding-top: 20px;  
-    padding-left: 20px;
-    padding-right: 40px;
-    grid-column: 1/4;
-  
   }
 
 .logo {
@@ -368,19 +384,14 @@ color: #7140dc !important; }
   color: #A6A6A6;
 }
 
-  .button:hover {
+.button:hover {
     border-radius: 15px;
     border: none;
     background-color: #713FDC;
     color: white;
 }
 
-.footer {
-    background-color: pink;
-    text-align: center;
-    padding: 2px;
-}
-
+/* Back to Top button that appears when data is available */
 #myBtn {
   display: none; 
   position: fixed; 
@@ -400,6 +411,7 @@ color: #7140dc !important; }
 #myBtn:hover {
   background-color: #713FDC; 
 }
+
 
 
 
@@ -439,6 +451,8 @@ header {
   margin-left: 20px;
   margin-bottom: 50px;
 }
+
+/* Media Queries */
 
 @media screen and (min-width: 768px) {
   .navbar {

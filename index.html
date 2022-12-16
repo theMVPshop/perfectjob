@@ -9,24 +9,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/71a3e38957.js" crossorigin="anonymous"></script>
   <script src="node_modules/rss-parser/dist/rss-parser.min.js"></script>
-  <script src="fetch.js"></script>
-
+  
 </head>
 <body>
   <nav class="navbar">
     <a href="index.html" class="nav-links"><i class="fa-regular fa-star"></i></a>
     <a href="index.html" class="nav-links"><b>Finder</b></a>
     <ul class="main-nav" id="js-menu">
-        <li>
-          <a href="favorites.html" class="nav-links">Find Jobs</a>
-        </li>
-        <li>
-          <a href="favorites.html" class="nav-links">My Jobs</a>
-        </li>
-        <li>
-          <a href="about.html" class="nav-links">About us</a>
-        </li>
-     </ul>
+      <li>
+        <a href="favorites.html" class="nav-links">Find Jobs</a>
+      </li>
+      <li>
+        <a href="favorites.html" class="nav-links">My Jobs</a>
+      </li>
+      <li>
+        <a href="about.html" class="nav-links">About us</a>
+      </li>
+    </ul>
     
     <ul class="right-nav">
       
@@ -35,46 +34,47 @@
       <a class="nav-links" href="#createaccount">Create Account</a>
     </ul>
   </nav>
-
+  
   <img src="./Screen Shot 2022-12-01 at 7.02.59 PM.png" alt="Girl in a jacket" width="auto" height="60%">
-
- 
+  
+  
   <div class="middle">
     <a><i class="fa-solid fa-magnifying-glass fa-lg"></i>
-      <input type="search" class="fontAwesome" id="site-search" name="q" placeholder="Job Title or Keyword">
+      <input type="search" class="fontAwesome" id="title-search" name="q" placeholder="Job Title or Keyword">
     </a>
     <a><i class="fa-solid fa-magnifying-glass fa-lg"></i>
-      <input type="search" id="site-search" name="q" placeholder="Location">
+      <input type="search" id="location-search" name="q" placeholder="Location">
     </a>
     
     <select name="jobtype" id="site-search">
-        <option>Job type</option>
-        <option value="fulltime">Full Time</option>
-        <option value="parttime">Part Time</option>
+      <option>Job type</option>
+      <option value="fulltime">Full Time</option>
+      <option value="parttime">Part Time</option>
     </select>
-
-    <button onclick="getFeed()">Find Job</button>
+    
+    <button id="search">Find Job</button>
   </div>
   <li id="jobData"></li>
-
- <div class ="footer">
   
-  <li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="one" href="">Apply For New Job</a></li>
-<li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="two" href="">Register Your Account</a></li>
- <li class="bottom-grid bglink"> <img class = "arrow" src="./arrow.png" alt="arrow"> <a class="three" href="">Update Resumes</a></li>
-  <li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="four" href="">Search New Job</a></li>
- <li class="bottom-grid"> <div style='display: block;'>
-    <h4>Our Pricing</h4>
-    <label class="switch" style='top:15px;'>
-      <input class='active' type="checkbox" checked>
-
-      <div class="slider round" @click="toggleSlider()">                                        
-        <span class="toggle-on" >Yearly</span>
-        <span class="toggle-off">Monthly</span>                             
-      </div>
-    </label>                              
- </div>
-</li>
-      </div>                              
+  <div class ="footer">
+    
+    <li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="one" href="">Apply For New Job</a></li>
+    <li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="two" href="">Register Your Account</a></li>
+    <li class="bottom-grid bglink"> <img class = "arrow" src="./arrow.png" alt="arrow"> <a class="three" href="">Update Resumes</a></li>
+    <li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="four" href="">Search New Job</a></li>
+    <li class="bottom-grid"> <div style='display: block;'>
+      <h4>Our Pricing</h4>
+      <label class="switch" style='top:15px;'>
+        <input class='active' type="checkbox" checked>
+        
+        <div class="slider round" @click="toggleSlider()">                                        
+          <span class="toggle-on" >Yearly</span>
+          <span class="toggle-off">Monthly</span>                             
+        </div>
+      </label>                              
+    </div>
+  </li>
+</div>                              
 </body>
+<script src="fetch.js"></script>
 </html>

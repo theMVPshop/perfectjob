@@ -1,10 +1,12 @@
-async function getFeed() {
+async function getFeed(event, jobTitle, location, positionType) {
+    preventDefault(event)
     let parser = new RSSParser();
+    console.log('getFeed')
 
     //actual values need to be equal to front end user inputs
-    let jobTitle = 'developer';
-    let location = 'austin, tx';
-    let positionType = 'fulltime';
+    // let jobTitle = document.getElementById('jobTitle');
+    // let location = document.getElementById('location');
+    // let positionType = document.getElementById('positionType');
 
     parser.parseURL(`https://rss.indeed.com/rss/jobs?q=${jobTitle}&l=${location}&sc=0kf%3Ajt%28${positionType}%29%3B&radius=0&vjk=2dd88a57cffe14c8`, function(err, feed) {
         if (err) throw err;

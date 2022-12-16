@@ -1,3 +1,4 @@
+
 let jobTitle = '';
 
 const titleText = document.getElementById('title-search');
@@ -49,6 +50,7 @@ button.addEventListener('click', function(event) {
     //actual values need to be equal to front end user inputs
     
     parser.parseURL(`https://rss.indeed.com/rss/jobs?q=${jobTitle}`, function(err, feed) {
+
         if (err) throw err;
         console.log(feed.title);
         

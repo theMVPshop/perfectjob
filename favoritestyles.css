@@ -6,6 +6,7 @@
 
 body{
   display: grid;
+  grid-template-columns: auto auto;
   height: 100vh;
   background-color: #F3F4F6;
   font-family: 'Exo', sans-serif;
@@ -26,6 +27,7 @@ main {
 .abouttitle {
   color: purple;
   margin-left: 5%;
+  grid-column: 1/2;
 }
 
 .headerimg { 
@@ -462,7 +464,7 @@ header {
 @media screen and (min-width: 768px) {
   .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 0;
     height: 70px;
    
@@ -506,13 +508,8 @@ header {
       display: flex;
       flex-wrap: wrap;
   }
-  .navbar {
-      display: flex;
-      justify-content: left;
-      padding-bottom: 10vh;
-      height: 70px;
-     
-    }
+
+
     .footer{
       display: flex;
       flex-direction: row;  

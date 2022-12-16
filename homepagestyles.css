@@ -4,19 +4,29 @@
   margin: 0;
 }
 
+
 body{
   display: grid;
   height: 100vh;
-  grid-template-rows: auto auto auto auto;
   background-color: #F3F4F6;
   font-family: 'Exo', sans-serif;
   font-weight:900;
 }
 
+main {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+.fontAwesome {
+  font-family: 'Helvetica', FontAwesome, sans-serif;
+}
 
 
 
-img { 
+
+
+.headerimg { 
   max-width: 100%; 
   height: auto; 
 }
@@ -41,7 +51,6 @@ header {
   padding-top: 20px;  
   padding-left: 20px;
   padding-right: 40px;
-
 }
 
 .main-nav {

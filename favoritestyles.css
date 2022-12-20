@@ -13,6 +13,11 @@ body{
   font-weight:900;
 }
 
+section.main{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 /* Home Page */
 
 main {
@@ -520,8 +525,13 @@ header {
      height: fit-content;
      width: fit-content;
     }
+    .profile{
+      height: 500px;
+      width: fit-content;
+    
+      }
     .profileimage{
-      height: 200px;
+      height: 80%;
     }
 
       }
@@ -530,9 +540,13 @@ header {
 
       @media screen and (max-height: 600px){
         .profile{
-          height: 90%;
+          height: 600px;
           width: fit-content;
         
           }
-        
+
+        .profileimage{
+      height: 80%;
+    }
+
       }

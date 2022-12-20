@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/71a3e38957.js" crossorigin="anonymous"></script>
   <script src="node_modules/rss-parser/dist/rss-parser.min.js"></script>
-  
+  <script src="fetch.js"></script>
+
 </head>
 <body>
   <main>
@@ -17,16 +18,16 @@
     <a href="index.html" class="nav-links"><i class="fa-regular fa-star"></i></a>
     <a href="index.html" class="nav-links"><b>Finder</b></a>
     <ul class="main-nav" id="js-menu">
-      <li>
-        <a href="favorites.html" class="nav-links">Find Jobs</a>
-      </li>
-      <li>
-        <a href="favorites.html" class="nav-links">My Jobs</a>
-      </li>
-      <li>
-        <a href="about.html" class="nav-links">About us</a>
-      </li>
-    </ul>
+        <li>
+          <a href="favorites.html" class="nav-links">Find Jobs</a>
+        </li>
+        <li>
+          <a href="favorites.html" class="nav-links">My Jobs</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-links">About us</a>
+        </li>
+     </ul>
     
     <ul class="right-nav">
       
@@ -36,15 +37,13 @@
     </ul>
   </nav>
 
-
   <img class="headerimg" src="./Screen Shot 2022-12-01 at 7.02.59 PM.png" alt="Basketball Background" width="auto" height="60%">
 
  
   <div class="middle">
     <form id="getFeed">
     <a><i class="fa-solid fa-magnifying-glass fa-lg"></i>
-                           
-      <input type="search" class="fontAwesome" id="jobTitle" name="title-search" placeholder="Job Title or Keyword">
+      <input type="search" class="fontAwesome" id="jobTitle" name="jobTitle" placeholder="Job Title or Keyword">
     </a>
     <a><i class="fa-solid fa-magnifying-glass fa-lg"></i>
       <input type="search" id="location" name="location" placeholder="Location">
@@ -82,5 +81,4 @@
 <footer>   
 </main>                           
 </body>
-<script src="fetch.js"></script>
 </html>

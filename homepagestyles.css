@@ -91,7 +91,7 @@ header {
 }
 
 
-section.middle {
+div.middle {
   border-radius: 50px;
   border: 0;
   border-color: #070707;

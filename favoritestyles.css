@@ -13,7 +13,7 @@ body{
   font-weight:900;
 }
 
-section.main{
+.main{
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -550,3 +550,12 @@ header {
     }
 
       }
+@media screen and (max-width: 768px){
+  .main-nav{
+    margin-top: 15px;
+  }
+  .nav-links{
+    margin: 5px;
+  }
+
+}

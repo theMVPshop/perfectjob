@@ -35,6 +35,20 @@ main {
   grid-column: 1/2;
 }
 
+.homeheading {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.pinkHeading {
+  font-size: 50px;
+  color: #FF4B88;
+}
+
+.findjobs {
+  font-size: 15px;
+}
+
 .headerimg { 
   max-width: 100%; 
   height: auto; 

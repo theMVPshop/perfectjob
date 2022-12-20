@@ -1,4 +1,3 @@
-
 let jobTitle = '';
 let jobLocation = '';
 let positionType = '';

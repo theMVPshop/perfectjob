@@ -267,15 +267,11 @@ color: #7140dc !important; }
 {  border-radius: 5px;  }
 
 .bottom-grid{
-  padding:13%;
+  padding: 5%;
   display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
-.bg1{
-  flex:1;
-  color: yellow;
-}
 
 
 .bglink{
@@ -284,7 +280,7 @@ color: #7140dc !important; }
   grid-template-rows: auto auto;
  
   border-radius: 10px;
-  margin: 10%;
+  margin: 2%;
   height: 180px;
   width: 180px;
   background-color: #ffffff;

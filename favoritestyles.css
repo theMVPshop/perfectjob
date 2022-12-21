@@ -6,7 +6,6 @@
 
 body{
   display: grid;
-  grid-template-columns: auto auto;
   height: 100vh;
   background-color: #F3F4F6;
   font-family: 'Exo', sans-serif;
@@ -14,16 +13,11 @@ body{
 }
 
 .main{
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
 }
 
 /* Home Page */
 
-main {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-}
 
 .fontAwesome {
   font-family: 'Helvetica', FontAwesome, sans-serif;
@@ -178,9 +172,11 @@ button {
 }
 
 footer{
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  grid-template-columns: auto auto auto auto auto;
+  grid-row: 4/5;
 }
 
 
@@ -274,7 +270,11 @@ color: #7140dc !important; }
   padding:13%;
   display: flex;
   justify-content: center;
+}
 
+.bg1{
+  flex:1;
+  color: yellow;
 }
 
 
@@ -359,11 +359,13 @@ color: #7140dc !important; }
 }
 
 .container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   grid-row:3/4;
   margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* Favorite Jobs */
@@ -529,16 +531,7 @@ header {
   }
 
 
-    .footer{
-      display: flex;
-      flex-direction: row;  
-      flex-wrap: wrap;
-    }
-  
-    .bottom-grid{
-     height: fit-content;
-     width: fit-content;
-    }
+ 
     .profile{
       height: 500px;
       width: fit-content;

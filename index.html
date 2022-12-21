@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="homepagestyles.css">
+  <link rel="stylesheet" href="favoritestyles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/71a3e38957.js" crossorigin="anonymous"></script>
   <script src="node_modules/rss-parser/dist/rss-parser.min.js"></script>
@@ -46,7 +46,7 @@
              Dribble provides a place for you to find your job.</h1>
     </section> 
 
-  <div class="middle">
+  <section class="middle">
     <a><i class="fa-solid fa-magnifying-glass fa-lg"></i>
       <input type="search" class="fontAwesome" id="title-search" name="q" placeholder="Job Title or Keyword">
     </a>
@@ -62,10 +62,10 @@
     
     <button onclick="getFeed()">Find Job</button>
     <li id="jobData"></li>
-  </div>
-  <div class ="footer">
+  </section>
+  <footer class ="footer">
     
-    <li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="one" href="">Apply For New Job</a></li>
+    <li class="bottom-grid bg1 bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="one" href="">Apply For New Job</a></section>
     <li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="two" href="">Register Your Account</a></li>
     <li class="bottom-grid bglink"> <img class = "arrow" src="./arrow.png" alt="arrow"> <a class="three" href="">Update Resumes</a></li>
     <li class="bottom-grid bglink"><img class = "arrow" src="./arrow.png" alt="arrow"><a class="four" href="">Search New Job</a></li>
@@ -81,7 +81,7 @@
       </label>                              
     </div>
   </li>
-</div>                              
+</footer>                              
 <script src="fetch.js"></script>
 </body>
 </html>

@@ -34,15 +34,22 @@ async function getFeed() {
     if (err) throw err;
 
     feed.items.forEach(function(entry) {
+      let li = document.getElementById('jobData');
     
-        let h2 = document.createElement('h1');
-        let h3 = document.createElement('h2');
-        let p = document.createElement('p');
+      let h2 = document.createElement('h2');
+      h2.innerHTML = entry.title;
 
-        let li = document.getElementById('jobData');
-        let text = document.createTextNode(entry.title + '\n' + entry.link + '\n' + entry.contentSnippet);
-        li.appendChild(text);
-        document.body.appendChild(li)
+      let a = document.createElement('a');
+      a.href = entry.link;
+      a.innerHTML = entry.link;
+
+      let p = document.createElement('p');
+      p.innerHTML = entry.contentSnippet;
+
+      li.appendChild(h2);
+      li.appendChild(a);
+      li.appendChild(p);
+      document.body.appendChild(li)
     })
   })
 };

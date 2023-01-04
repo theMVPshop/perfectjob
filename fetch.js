@@ -2,6 +2,7 @@
 let jobTitle = '';
 let jobLocation = '';
 let positionType = '';
+let favorites = [];
 
 const titleText = document.getElementById('title-search');
 const locationText = document.getElementById('location-search');
@@ -11,6 +12,7 @@ locationText.addEventListener('input', updateLocationValue);
 
 
 function updateTitleValue(e) {
+  e.preventDefault();
   jobTitle = e.target.value;
 }
 
@@ -46,10 +48,24 @@ async function getFeed() {
       let p = document.createElement('p');
       p.innerHTML = entry.contentSnippet;
 
+      let button = document.createElement('button');
+      button.addEventListener('click', saveFavorite);
+      function saveFavorite() {
+        let title = h2.innerHTML;
+        let link = a.innerHTML;
+        let summary = p.innerHTML;
+
+        favorites = [...favorites, {'title': title, 'link': link, 'contentSnippet': summary}];
+
+        console.log(favorites)
+      }
+
       li.appendChild(h2);
       li.appendChild(a);
       li.appendChild(p);
+      li.appendChild(button);
       document.body.appendChild(li)
     })
   })
-};
+}
+

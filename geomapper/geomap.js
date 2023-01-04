@@ -1,6 +1,6 @@
 alert("success");
 
-var map = L.map("map").setView([30.2019024431465, -97.87393387393803], 13);
+var map = L.map("map").setView([30.26715, -97.74306], 13);
 // creates the box that holds the map tiles
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -25,3 +25,6 @@ var popup = L.popup()
 var locateMe = map.locate(setView = true);
 var stoplocate = map.stopLocate();
 // finding my location might need an api i cant use, pointToSegmentDistance func might be the only way to show distance from home to job.
+
+
+// grab georss from each entry individually and use it here to auto fill the lat long. a button should fit in each line next to favorite button

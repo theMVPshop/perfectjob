@@ -56,8 +56,7 @@ async function getFeed() {
         let summary = p.innerHTML;
 
         favorites = [...favorites, {'title': title, 'link': link, 'contentSnippet': summary}];
-
-        console.log(favorites)
+        localStorage.setItem('favorites', JSON.stringify(favorites));
       }
 
       li.appendChild(h2);

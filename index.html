@@ -52,7 +52,9 @@
       <input type="search" class="fontAwesome" id="title-search" name="q" placeholder="Job Title or Keyword">
     </a>
     <a><i class="fa-solid fa-location-dot fa-lg"></i>
-      <input type="search" id="location-search" name="q" placeholder="Location">
+      <input type="search" id="location-search" name="q" placeholder="Location" list="cities">
+      <datalist id="cities">
+      </datalist>
     </a>
     
     <select name="jobtype" id="position-type" onchange="updatePositionValue()">

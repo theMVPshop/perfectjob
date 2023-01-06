@@ -37,10 +37,10 @@ async function getFeed() {
 
     feed.items.forEach(function(entry) {
       let li = document.getElementById('jobData');
-        li.style.display = "inline-block";  // Set the display property of the 'li' element to 'inline-block'
-        li.style.width = "50%";  // Set the width of the 'li' element to 50%
-        li.style.padding = "0 20px";  // Add padding to the 'li' element
-        li.style.margin = "40px 0";  // Add margin to the 'li' element
+        li.style.display = "inline-block"; 
+        li.style.width = "50%";  
+        li.style.padding = "0 20px";  
+        li.style.margin = "40px 0"; 
 
       let h2 = document.createElement('h2');
       h2.innerHTML = `<a href="${entry.link}">${entry.title}</a>`;

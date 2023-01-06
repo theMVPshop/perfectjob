@@ -2,7 +2,7 @@ fetch('cities.json')
   .then(response => response.json())
   .then(cities => {
     // Get the datalist element
-    const datalist = document.getElementById('cities');
+    const datalist = document.getElementById('locations');
 
     // Loop through the cities array and create an option element for each city
     cities.forEach(city => {

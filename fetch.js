@@ -31,6 +31,8 @@ async function getFeed() {
     }
   });
 
+  
+
   parser.parseURL(`https://rss.indeed.com/rss/jobs?q=${jobTitle}&l=${jobLocation}&sc=0kf%3Ajt%28${positionType}%29%3B&radius=0&vjk=2dd88a57cffe14c8`, function(err, feed) {
     document.getElementById('jobData').innerHTML = '';
     if (err) throw err;

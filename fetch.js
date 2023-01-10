@@ -31,16 +31,18 @@ async function getFeed() {
     }
   });
 
+  
+
   parser.parseURL(`https://rss.indeed.com/rss/jobs?q=${jobTitle}&l=${jobLocation}&sc=0kf%3Ajt%28${positionType}%29%3B&radius=0&vjk=2dd88a57cffe14c8`, function(err, feed) {
     document.getElementById('jobData').innerHTML = '';
     if (err) throw err;
 
     feed.items.forEach(function(entry) {
       let li = document.getElementById('jobData');
-        li.style.display = "inline-block";  // Set the display property of the 'li' element to 'inline-block'
-        li.style.width = "50%";  // Set the width of the 'li' element to 50%
-        li.style.padding = "0 20px";  // Add padding to the 'li' element
-        li.style.margin = "40px 0";  // Add margin to the 'li' element
+        li.style.display = "inline-block"; 
+        li.style.width = "50%";  
+        li.style.padding = "0 20px";  
+        li.style.margin = "40px 0"; 
 
       let h2 = document.createElement('h2');
       h2.innerHTML = `<a href="${entry.link}">${entry.title}</a>`;
@@ -69,3 +71,16 @@ async function getFeed() {
   })
 }
 
+// fetch('cities.json')
+//   .then(response => response.json())
+//   .then(cities => {
+//     // Get the datalist element
+//     const datalist = document.getElementById('cities');
+
+//     // Loop through the cities array and create an option element for each city
+//     cities.forEach(city => {
+//       const option = document.createElement('option');
+//       option.value = city.name;
+//       datalist.appendChild(option);
+//     });
+//   });

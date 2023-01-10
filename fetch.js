@@ -36,11 +36,13 @@ async function getFeed() {
     if (err) throw err;
 
     feed.items.forEach(function(entry) {
-      let li = document.getElementById('jobData');
-        li.style.display = "inline-block";  // Set the display property of the 'li' element to 'inline-block'
-        li.style.width = "50%";  // Set the width of the 'li' element to 50%
-        li.style.padding = "0 20px";  // Add padding to the 'li' element
-        li.style.margin = "40px 0";  // Add margin to the 'li' element
+      let jobData = document.getElementById('jobData');
+      let div = document.createElement('div');
+      jobData.appendChild(div)
+        jobData.style.display = "inline-block";  // Set the display property of the 'li' element to 'inline-block'
+        jobData.style.width = "50%";  // Set the width of the 'li' element to 50%
+        jobData.style.padding = "0 20px";  // Add padding to the 'li' element
+        jobData.style.margin = "40px 0";  // Add margin to the 'li' element
 
       let h2 = document.createElement('h2');
       h2.innerHTML = `<a href="${entry.link}">${entry.title}</a>`;
@@ -61,10 +63,9 @@ async function getFeed() {
         localStorage.setItem('favorites', JSON.stringify(favorites));
       }
 
-      li.appendChild(h2);
-      li.appendChild(p);
-      li.appendChild(button);
-      document.body.appendChild(li)
+      div.appendChild(h2);
+      div.appendChild(p);
+      div.appendChild(button);
     })
   })
 }

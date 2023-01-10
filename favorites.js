@@ -20,10 +20,12 @@ function loadFavorites() {
   favorites = JSON.parse(favorites)
   console.log(favorites)
   favorites.forEach(function(entry) {
-    let li = document.getElementById('results');
+    let results = document.getElementById('results');
+    let div = document.createElement('div');
+    results.appendChild(div);
   
     let h2 = document.createElement('h2');
-    h2.innerHTML = entry.title;
+    h2.innerHTML = `<a href="${entry.link}">${entry.title}</a>`;
 
     let a = document.createElement('a');
     a.href = entry.link;
@@ -32,10 +34,8 @@ function loadFavorites() {
     let p = document.createElement('p');
     p.innerHTML = entry.contentSnippet;
 
-    li.appendChild(h2);
-    li.appendChild(a);
-    li.appendChild(p);
-    document.body.appendChild(li)
+    div.appendChild(h2);
+    div.appendChild(p);
   })
 };
 

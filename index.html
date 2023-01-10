@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/71a3e38957.js" crossorigin="anonymous"></script>
   <script src="node_modules/rss-parser/dist/rss-parser.min.js"></script>
+  <script src="fetch.js"></script>
+  <script src="citiesautocomplete.js"></script>
+
 
 </head>
 <body>
@@ -45,13 +48,16 @@
     <h1 class="findjobs">Find jobs that match your interests with us.
              Dribble provides a place for you to find your job.</h1>
     </section> 
+    <img src="./images/basketball.png" alt="bball image">
 
   <section class="middle">
     <a><i class="fa-solid fa-magnifying-glass fa-lg"></i>
       <input type="search" class="fontAwesome" id="title-search" name="q" placeholder="Job Title or Keyword">
     </a>
     <a><i class="fa-solid fa-location-dot fa-lg"></i>
-      <input type="search" id="location-search" name="q" placeholder="Location">
+      <input type="search" id="location-search" name="q" placeholder="Location" list="locations">
+      <datalist id="locations">
+      </datalist>
     </a>
     
     <select name="jobtype" id="position-type" onchange="updatePositionValue()">
@@ -59,6 +65,7 @@
       <option value="parttime">Part Time</option>
     </select>
     <button onclick="getFeed()">Find Job</button>
+  
   </section>
     <div id="jobData"></div>
 
@@ -86,6 +93,5 @@
     </div>
   </li>
 </footer>                              
-<script src="fetch.js"></script>
 </body>
 </html>

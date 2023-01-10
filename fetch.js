@@ -31,6 +31,8 @@ async function getFeed() {
     }
   });
 
+  
+
   parser.parseURL(`https://rss.indeed.com/rss/jobs?q=${jobTitle}&l=${jobLocation}&sc=0kf%3Ajt%28${positionType}%29%3B&radius=0&vjk=2dd88a57cffe14c8`, function(err, feed) {
     document.getElementById('jobData').innerHTML = '';
     if (err) throw err;
@@ -70,3 +72,16 @@ async function getFeed() {
   })
 }
 
+// fetch('cities.json')
+//   .then(response => response.json())
+//   .then(cities => {
+//     // Get the datalist element
+//     const datalist = document.getElementById('cities');
+
+//     // Loop through the cities array and create an option element for each city
+//     cities.forEach(city => {
+//       const option = document.createElement('option');
+//       option.value = city.name;
+//       datalist.appendChild(option);
+//     });
+//   });

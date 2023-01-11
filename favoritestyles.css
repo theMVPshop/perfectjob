@@ -14,6 +14,9 @@ body{
 
 .main{
   display: flex;
+  flex-direction: row;
+  padding: 10%;
+
 }
 
 /* Home Page */
@@ -30,12 +33,12 @@ body{
 }
 
 .homeheading {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 38px;
+  font-weight: 100px;
 }
 
 .pinkHeading {
-  font-size: 50px;
+  font-size: 38px;
   color: #FF4B88;
 }
 
@@ -101,7 +104,7 @@ header {
   margin: 15px auto;
 }
 
-.right-nav li {
+.right-nxfav li {
   text-align: center;
   margin: 15px auto;
 }

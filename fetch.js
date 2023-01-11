@@ -65,9 +65,17 @@ async function getFeed() {
         localStorage.setItem('favorites', JSON.stringify(favorites));
       }
 
+      let map = document.createElement('button');
+      map.innerHTML = "Show on map";
+      map.style.margin = "10px 0";
+      // map.addEventListener('click', )
+
+      console.log(entry)
+
       div.appendChild(h2);
       div.appendChild(p);
       div.appendChild(button);
+      div.appendChild(map);
     })
   })
 }

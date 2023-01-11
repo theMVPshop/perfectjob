@@ -72,6 +72,7 @@ async function getFeed() {
       li.appendChild(a);
       li.appendChild(p);
       li.appendChild(button);
+      li.appendChild(map);
       document.body.appendChild(li)
     })
   })

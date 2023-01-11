@@ -14,11 +14,15 @@ body{
 
 .main{
   display: flex;
+  width: 100%;
   flex-direction: row;
   padding: 10%;
 
 }
 
+.bball{
+ padding-left: 5%;
+}
 /* Home Page */
 
 
@@ -177,7 +181,6 @@ button {
 footer{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
   grid-row: 4/5;
 }
@@ -275,12 +278,9 @@ color: #7140dc !important; }
   width: 100%;
 }
 
-
-
 .bglink{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  display: flex;
+
  
   border-radius: 10px;
   margin: 2%;

@@ -39,6 +39,9 @@ async function getFeed() {
 
     feed.items.forEach(function(entry) {
       let jobData = document.getElementById('jobData');
+
+      
+
       let div = document.createElement('div');
       jobData.appendChild(div)
         jobData.style.display = "inline-block";  // Set the display property of the 'li' element to 'inline-block'
@@ -79,17 +82,3 @@ async function getFeed() {
     })
   })
 }
-
-// fetch('cities.json')
-//   .then(response => response.json())
-//   .then(cities => {
-//     // Get the datalist element
-//     const datalist = document.getElementById('cities');
-
-//     // Loop through the cities array and create an option element for each city
-//     cities.forEach(city => {
-//       const option = document.createElement('option');
-//       option.value = city.name;
-//       datalist.appendChild(option);
-//     });
-//   });

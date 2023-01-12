@@ -44,10 +44,10 @@ async function getFeed() {
 
       let div = document.createElement('div');
       jobData.appendChild(div)
-        jobData.style.display = "inline-block";  // Set the display property of the 'li' element to 'inline-block'
-        jobData.style.width = "50%";  // Set the width of the 'li' element to 50%
-        jobData.style.padding = "0 20px";  // Add padding to the 'li' element
-        jobData.style.margin = "40px 0";  // Add margin to the 'li' element
+        jobData.style.display = "inline-block";
+        jobData.style.width = "50%";  
+        jobData.style.padding = "0 20px";  
+        jobData.style.margin = "40px 0";  
 
       let h2 = document.createElement('h2');
       h2.innerHTML = `<a href="${entry.link}">${entry.title}</a>`;

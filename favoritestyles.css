@@ -4,6 +4,15 @@
   margin: 0;
 }
 
+#jobData div{
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  padding: 20px 40px;
+  margin: 40px 0; 
+  box-shadow:
+  0 3px 10px rgb(0 0 0 / 0.2);
+}
+
 body{
   display: grid;
   height: 100vh;
@@ -24,19 +33,6 @@ body{
  padding-left: 5%;
 }
 /* Home Page */
-
-.card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin: 10px 0;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
-}
 
 
 .fontAwesome {

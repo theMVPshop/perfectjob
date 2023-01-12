@@ -195,7 +195,7 @@ footer{
   display: flex;
   flex-direction: row;
   width: 100%;
-  grid-row: 4/5;
+  grid-row: 5/5;
   margin-top: 10%;
 }
 

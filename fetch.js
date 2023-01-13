@@ -24,6 +24,13 @@ function updatePositionValue() {
   positionType = document.getElementById("position-type").value;
 }
 
+function addImages () {
+  let pTags = document.querySelectorAll("#jobData p");
+  for (let i = 0; i < pTags.length; i++) {
+    pTags[i].insertAdjacentHTML("beforebegin","<div class='imageContainer'><img src='https://loremflickr.com/160/160/laptop?"+i+"'/></div>")
+  }
+}
+
 async function getFeed() {
   let parser = new RSSParser({
     customFields: {
@@ -72,5 +79,6 @@ async function getFeed() {
       div.appendChild(p);
       div.appendChild(button);
     })
+    addImages();
   })
 }

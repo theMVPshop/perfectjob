@@ -26,11 +26,15 @@ body{
   width: 100%;
   flex-direction: row;
   padding: 10%;
+  padding-top:5%;
+  padding-bottom:5%;
 
 }
 
 .bball{
  padding-left: 5%;
+ height: 249px;
+ width: 620px;
 }
 /* Home Page */
 
@@ -298,7 +302,7 @@ color: #7140dc !important; }
  justify-content: space-around;
   border-radius: 10px;
   margin: 2%;
-  height: 180px;
+  height: 160px;
   width: 180px;
   background-color: #ffffff;
   
@@ -318,16 +322,20 @@ color: #7140dc !important; }
 }
 
 .one{
-  grid-row:2/3;
+  margin-right:20px;
+
 }
 .two{
-  grid-row:2/3;
+  margin-right:20px;
+
 }
 .three{
-  grid-row:2/3;
+  margin-right:20px;
+
 }
 .four{
-  grid-row:2/3;
+  margin-right:20px;
+
 }
 
 .bglink:hover .one{

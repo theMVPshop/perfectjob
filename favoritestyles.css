@@ -661,3 +661,12 @@ header {
   }
 
 }
+
+#jobData .imageContainer {
+  float:right;
+  margin:5px 5px 5px 5px;
+  padding:0;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+}

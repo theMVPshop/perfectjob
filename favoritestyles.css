@@ -57,6 +57,9 @@ body{
   font-weight: 100px;
 }
 
+.in{
+  color:black;
+}
 .pinkHeading {
   font-size: 38px;
   color: #FF4B88;

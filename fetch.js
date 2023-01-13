@@ -39,6 +39,7 @@ async function getFeed() {
 
     feed.items.forEach(function(entry) {
       let jobData = document.getElementById('jobData');
+      console.log(jobData)
 
       
 

@@ -194,7 +194,9 @@ footer{
   flex-direction: row;
   width: 100%;
   grid-row: 5/5;
-  margin-top: 10%;
+  margin-top: 3%;
+  margin-left: 5%;
+
 }
 
 
@@ -293,7 +295,7 @@ color: #7140dc !important; }
 .bglink{
   display: flex;
 
- 
+ justify-content: space-around;
   border-radius: 10px;
   margin: 2%;
   height: 180px;

@@ -52,10 +52,6 @@ async function getFeed() {
 
       let div = document.createElement('div');
       jobData.appendChild(div)
-        jobData.style.display = "inline-block";
-        jobData.style.width = "50%";  
-        jobData.style.padding = "0 20px";  
-        jobData.style.margin = "40px 0";  
 
       let h2 = document.createElement('h2');
       h2.innerHTML = `<a href="${entry.link}">${entry.title}</a>`;

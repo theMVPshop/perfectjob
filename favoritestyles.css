@@ -33,8 +33,8 @@ body{
 
 .bball{
  padding-left: 5%;
- height: 155px;
- width: 450px;
+ height: 180px;
+ width: 470px;
 }
 /* Home Page */
 
@@ -43,6 +43,9 @@ body{
   font-family: 'Helvetica', FontAwesome, sans-serif;
 }
 
+.dream{
+  width:450px;
+}
 .abouttitle {
   color: purple;
   margin-left: 5%;
@@ -88,6 +91,7 @@ header {
   font-size: 18px;
   border: 1px solid rgba(0, 0, 0, 0);
   color: #070707;
+  width: 90%;
   text-decoration: none; 
   padding-bottom: 10px;
   padding-top: 20px;  
@@ -128,13 +132,15 @@ header {
 
 
 section.middle {
+  width: 900px;
   border-radius: 50px;
   border: 0;
+  color:#aeaeae;
   border-color: #070707;
   background-color: #FFFFFF;
   padding: 20px;
   margin: auto;
-  word-spacing: 40px;
+  word-spacing: 20px;
   box-shadow:   
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -142,6 +148,21 @@ section.middle {
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.loc{
+  width: fit-content;
+
+  margin-left:8x;
+}
+
+.jobtype{
+  color: #aeaeae;
+  margin-right: 40px;
+}
+
+.jobtitle{
+  color: #aeaeae;
 }
 
 div.bottom{

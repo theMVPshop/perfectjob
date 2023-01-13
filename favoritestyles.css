@@ -316,6 +316,7 @@ color: #7140dc !important; }
 
 .arrow{
   height: 30px;
+  width: 30px;
   float:right;
   grid-column: 2/3;
   grid-row:1/2;
@@ -334,7 +335,7 @@ color: #7140dc !important; }
 
 }
 .four{
-  margin-right:20px;
+    margin-right:20px;
 
 }
 
@@ -353,6 +354,55 @@ color: #7140dc !important; }
   color: white;
 
 }
+
+footer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.bottom-grid{
+  position: relative;
+  padding: 2%;
+  width: 100%;
+}
+
+.bglink{
+  border-radius: 10px;
+  margin: 2%;
+  height: 120px;
+  width: 260px;
+  background-color: #ffffff;
+  
+}
+
+.bglink:hover{
+  background-color: #713FDC;
+
+}
+
+.bottom-grid img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.bglink a {
+  text-decoration: none;
+  color: black;
+  size: .8em;
+}
+
+.bglink:hover a {
+  color: white;
+}
+
+.bglink:hover img {
+  filter: invert(1);
+}
+
 
 /* About Page CSS */
 
